@@ -14,6 +14,5 @@ int main() {
   std::cout << "1" << " - " << (new_str1 < new_str2) << std::endl;
   MyString new_str3 = !new_str2;
   std::cout << "NO" << " - " << new_str3.get() << std::endl;
-  
   return 0;
 }

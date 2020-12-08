@@ -1,8 +1,5 @@
 // Copyright 2020 jswark
 #include "MyString.h"
-#include <cstring>
-#include <string>
-#include <cctype>
 
 MyString::MyString(const char* str) {
   if (str != nullptr) {
