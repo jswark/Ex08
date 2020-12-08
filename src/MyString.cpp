@@ -2,13 +2,15 @@
 #include "MyString.h"
 #include <cstring>
 #include <string>
-#include <ctype.h>
+#include <cctype>
 
 MyString::MyString(const char* str) {
   if (str != nullptr) {
     size_t len = std::strlen(str) + 1;
     this->m_Str = new char[len];
     std::strncpy(this->m_Str, str, len);
+  } else {
+    std::strncpy(this->m_Str, str, 0);
   }
 }
 
