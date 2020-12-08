@@ -9,7 +9,6 @@ MyString::MyString(const char* str) {
   } else {
     this->m_Str = new char[1];
     memset(this->m_Str, 0, 1);
-
   }
 }
 
