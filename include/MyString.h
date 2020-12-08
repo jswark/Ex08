@@ -8,7 +8,7 @@
 
 class MyString {
  public:
-   char* m_Str = new char;
+  char* m_Str = new char;
 
   explicit MyString(const char* = nullptr);
   explicit MyString(const std::string& str);
@@ -40,4 +40,4 @@ class MyString {
   friend std::istream &operator>>(std::istream&, MyString&);  // запись в поток.
 };
 
-#endif // INCLUDE_MYSTRING_H_
+#endif  // INCLUDE_MYSTRING_H_

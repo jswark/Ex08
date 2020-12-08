@@ -114,7 +114,7 @@ bool MyString::operator<=(const MyString& str) const {
 MyString& MyString::operator!() {
   unsigned int i = 0;
   while (i != this->length()) {
-    this->m_Str[i] = char(toupper(this->m_Str[i]));
+    this->m_Str[i] = static_cast<char>(toupper(this->m_Str[i]));
     i++;
   }
 
