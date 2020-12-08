@@ -7,7 +7,9 @@ MyString::MyString(const char* str) {
     this->m_Str = new char[len];
     std::strncpy(this->m_Str, str, len);
   } else {
-    std::strncpy(this->m_Str, str, 0);
+    this->m_Str = new char[1];
+    memset(this->m_Str, 0, 1);
+
   }
 }
 
